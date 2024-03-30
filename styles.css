@@ -642,7 +642,6 @@ main .description2 > img{
         position: absolute;
         top: 0;
         left: 50%;
-        /* transform: scale(1.5); */
         width: 6rem;
     }
     main .description2 .down{
@@ -681,7 +680,6 @@ main .description3 .star-with-ribbon{
 
 }
 main .description3 .up{
-    /* background: var(--BG3); */
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -712,7 +710,6 @@ main .description3 .up .right .imgbx img{
 }
 main .description3 .up .right .imgbx .bend-star{
     position: absolute;
-    /* left: 50%; */
     right: 60%;
     top: 50%;
     width: 60px;
@@ -721,25 +718,14 @@ main .description3 .up .right .imgbx .bend-star{
 main .description3 .down{
     padding: 4rem 2rem;
     display: flex;
-    gap: 800px;
-   
+    gap: 400px;
+    /* gap: auto; */
 }
 main .description3 .down img{
     width: 200px;
   
 }
-main .description3 .down .imgbx1{
-    display: flex;
-    gap: 200px;
-    width: 800px;
-    transform: translateX(100px);
-}
-main .description3 .down .imgbx2{
-    display: flex;
-    gap: 200px;
-    width: 800px;
-    transform: translateX(200px);
-}
+
 main .description3 .down .imgbx1 .up-slide,
 main .description3 .down .imgbx1 .down-slide{
     display: flex;
@@ -751,49 +737,42 @@ main .description3 .down .imgbx2 .down-slide{
     display: flex;
     flex-direction: column;
     gap: 100px;
+    
 }
 
 
-main .description3 .down .imgbx1{
-    animation-name: animate1;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-delay: 0;
-    animation-iteration-count: infinite;
+main .description3 .down .imgbx1,
+main .description3 .down .imgbx2{
+    display: flex;
+    justify-content: space-between;
+    width: 200%;
+    gap: 100px;
+    animation: animate1 10s linear infinite;
+ 
 }
 @keyframes animate1{
     0%{
-        transform: translateX(110%);
-    }
-    50%{
         transform: translateX(0);
     }
-    
+        
     100%{
-        transform: translateX(-110%);
+        transform: translateX(-300%);
     }
 }
 
-main .description3 .down .imgbx2{
-    animation-name: animate2;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-delay: 0;
-    animation-iteration-count: infinite;
+/* main .description3 .down .imgbx2{
+    animation: animate2 10s linear infinite;
+
 }
 
 @keyframes animate2{
     0%{
-        transform: translateX(110%);
-    }
-    50%{
         transform: translateX(0);
     }
-    
     100%{
-        transform: translateX(-110%);
+        transform: translateX(-200%);
     }
-}
+} */
 
 @media only screen and (min-width: 768px){
     main .description3 .star-with-ribbon{
