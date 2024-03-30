@@ -337,24 +337,17 @@ main .hero .hero-content .right .button-container button p{
     .hero .hero-animation-container .imgbx2 .first,
     .hero .hero-animation-container .imgbx2 .second{
     gap: 4rem;
-    animation-name: forth;   
-    animation-delay: 0s;
-    animation-duration: 4s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-fill-mode: none;
+    animation: forth 10s linear infinite;
     }
 
     @keyframes forth{
+       
         0%{
-            transform: translateX(110%);
+            transform: translateX(112%);
         }
-        50%{
-            transform: translateX(0%);
-        }
-            
+              
         100%{
-            transform: translateX(-110%);
+            transform: translateX(-120%);
         }
     }
 
@@ -919,11 +912,6 @@ main .download .download-content .background img{
 
 @media only screen and (min-width: 768px){
     main .download .download-content h2{
-        /* display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem; */
         font-size: 5rem;
         max-width: 600px;
     }
