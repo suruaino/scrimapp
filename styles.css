@@ -29,15 +29,12 @@ main{
     display: flex;
     flex-direction: column;
     position: relative;
-    /* gap: 4rem; */
-    /* border: 1px solid white; */
     width: 100%;
     
 }
 main .hero{
     padding-top: 1rem;
     padding-bottom: 1rem;
-    /* margin-bottom: 2rem; */
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -159,16 +156,7 @@ main .hero .hero-content .right .button-container button p{
         transform: translateX(-300%);
     }
 }
-/* .hero .hero-animation-container .imgbx1 .second{
-    animation-name: second;   
-    animation-delay: 10s;
-    animation-duration: 4s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-fill-mode:none;
-    animation-timing-function: ease-in;
-   
-} */
+
 @keyframes second{
     0%{
         transform: translateX(300%);
@@ -223,14 +211,7 @@ main .hero .hero-content .right .button-container button p{
         transform: translateX(300%);
     }
 }
-/* .hero .hero-animation-container .imgbx2 .second{
-    animation-name: forth;   
-    animation-delay: 10s;
-    animation-duration: 4s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-   
-} */
+
 @keyframes forth{
     0%{
         transform: translateX(-300%);
@@ -577,7 +558,6 @@ main .description2 .up .right{
 main .description2 .up .right p{
     color: #7000ff;
     transform: scaleY(.8);
-    /* position: relative; */
 }
 main .description2 .up .right p img{
     position: absolute;
@@ -669,8 +649,6 @@ main .description3{
     display: flex;
     flex-direction: column;
     position: relative;
-    /* padding: 0 6rem; */
-    /* overflow: hidden; */
 }
 main .description3 .star-with-ribbon{
     position: absolute;
@@ -717,7 +695,6 @@ main .description3 .up .right .imgbx .bend-star{
 
 main .description3 .down{
     width: calc(100%);
-    /* width: 100vw; */
     padding: 4rem 2rem;
     margin: 0 auto;
     display: flex;
@@ -769,10 +746,6 @@ main .description3 .down .imgbx2{
         top: 50%;
         width: 60px;
     }
-    main .description3 .down{
-        /* overflow-x: hidden; */
-    }
-
     
 }
 
