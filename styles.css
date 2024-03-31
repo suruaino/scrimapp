@@ -669,8 +669,8 @@ main .description3{
     display: flex;
     flex-direction: column;
     position: relative;
-    padding: 0 6rem;
-    overflow: hidden;
+    /* padding: 0 6rem; */
+    /* overflow: hidden; */
 }
 main .description3 .star-with-ribbon{
     position: absolute;
@@ -716,66 +716,46 @@ main .description3 .up .right .imgbx .bend-star{
 }
 
 main .description3 .down{
+    width: calc(100%);
+    /* width: 100vw; */
     padding: 4rem 2rem;
+    margin: 0 auto;
     display: flex;
-    flex-direction: column;
-    gap: 100px;
-    /* gap: auto; */
+    overflow-x:visible;
 }
 main .description3 .down img{
     width: 200px;
+    margin-inline: 1rem;
   
 }
 
 main .description3 .down .imgbx1,
-main .description3 .down .imgbx1{
-    display: flex;
-    /* flex-direction: column; */
-    gap: 100px;
-}
-main .description3 .down .imgbx2,
 main .description3 .down .imgbx2{
+    white-space: nowrap;
     display: flex;
-    /* flex-direction: column; */
-    gap: 100px;
-    
+    flex-direction: column;
+    gap: 5rem;
+    animation: animate1 20s linear infinite;
 }
 
-
-main .description3 .down .imgbx1,
-main .description3 .down .imgbx2{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    gap: 100px;
-    animation: animate1 10s linear infinite;
- 
-}
 @keyframes animate1{
     0%{
-        transform: translateX(100%);
+        transform: translateX(0%);
     }
         
     100%{
-        transform: translateX(0);
+        transform: translateX(-100%);
     }
 }
-
-/* main .description3 .down .imgbx2{
-    animation: animate2 10s linear infinite;
-
+@media only screen and (min-width: 280px){
+    main .description3 .down{
+        overflow-x: hidden;
+    }
 }
-
-@keyframes animate2{
-    0%{
-        transform: translateX(0);
-    }
-    100%{
-        transform: translateX(-200%);
-    }
-} */
-
 @media only screen and (min-width: 768px){
+    main .description3 {
+        padding: 0 6rem;
+    }
     main .description3 .star-with-ribbon{
         position: absolute;
         width: 70px;
@@ -789,6 +769,11 @@ main .description3 .down .imgbx2{
         top: 50%;
         width: 60px;
     }
+    main .description3 .down{
+        /* overflow-x: hidden; */
+    }
+
+    
 }
 
 @media only screen and (min-width: 950px){
